@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="healthygo2.vijayanitech.com.healthygo.CartActivity">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:id="@+id/tvtital"
+            android:textSize="25dp"
+            android:text="History"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header"
+        android:id="@+id/cartview">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/list"
+            android:background="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

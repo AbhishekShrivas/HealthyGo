@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:paddingTop="5dp">
+    <RelativeLayout
+        android:id="@+id/rldiscover"
+        style="@style/homeitemlinear_relative">
+
+        <RelativeLayout
+            android:id="@+id/llmain"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/itempadding">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/thumbnail"
+                style="@style/storeliststoreimg"
+                android:src="@drawable/no_picture_sign"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignBottom="@+id/location" />
+            <LinearLayout
+                style="@style/homeitemlinear_l"
+                android:layout_toRightOf="@+id/ivDiscover"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/linearLayout">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/testname"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold|italic"
+                android:layout_alignTop="@+id/linearLayout"
+                android:layout_toEndOf="@+id/thumbnail" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lightline"
+            android:background="@color/viewlinelight"
+            android:layout_below="@+id/llmain"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/viewline"
+
+            android:weightSum="1"
+            android:layout_alignParentEnd="true">
+
+
+
+
+
+            <TextView
+                android:id="@+id/discprice"
+                style="@style/listitemsubtital"
+
+                android:text="Price"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="#10b92c"
+                android:layout_width="373dp"
+                android:textSize="17dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_below="@+id/llmain"></View>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignTop="@+id/llmain"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_alignEnd="@+id/llmain">
+
+            <ImageView
+                android:id="@+id/ivremove"
+                style="@style/secondcategoryimgright"
+
+                android:src="@drawable/cross"
+                android:layout_alignParentEnd="true" />
+            <!--<TextView
+                style="@style/listitemratingtext"
+                android:text="3.5"/>-->
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

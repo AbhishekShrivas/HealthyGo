@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topbarheight"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TextView
+                    style="@style/HeadertitalCentertext"
+                    android:id="@+id/tvtital"
+                    android:textSize="21sp"
+                    android:text="Payment Successfull"
+                    android:layout_marginLeft="130dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/coverr" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/successimg"
+                    android:background="#e4e4e4" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView8"
+                    android:layout_marginTop="5dp"
+                    android:background="#e4e4e4">
+
+                    <RelativeLayout
+                        android:id="@+id/info"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="16dp"
+
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Billed To"
+                            android:fontFamily="Cursive"
+                            android:paddingTop="20dp"
+
+                            android:textColor="#10b92c"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Name"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="25dp" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Phone Number"
+                            android:id="@+id/textView7"
+                            android:layout_below="@+id/textView6"
+                            android:layout_alignEnd="@+id/textView6" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Email Id"
+                            android:id="@+id/textView8"
+                            android:layout_below="@+id/textView7"
+                            android:layout_alignEnd="@+id/textView7" />
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/viewline"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lightline"
+                        android:background="@color/viewlinelight"
+                        android:layout_below="@+id/info"></View>
+                    <RelativeLayout
+                        android:id="@+id/info1"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/info"
+                        android:layout_height="150dp"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="16dp"
+
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Invoice Summary"
+                            android:id="@+id/textView9"
+                            android:textColor="#10b92c"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Order#"
+                            android:paddingTop="5dp"
+                            android:textSize="12dp"
+                            android:id="@+id/textView10"
+                            android:layout_below="@+id/textView9"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Product Name"
+                            android:textColor="#000"
+                            android:id="@+id/textView11"
+                            android:layout_alignBottom="@+id/textView13"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Invoice Date"
+                            android:id="@+id/textView12"
+                            android:layout_below="@+id/textView9"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Date"
+                            android:paddingTop="5dp"
+                            android:id="@+id/textView13"
+                            android:layout_below="@+id/textView12"
+                            android:layout_alignStart="@+id/textView12" />
+                    </RelativeLayout>>
+                    <View
+                        android:id="@+id/viewline2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lightline"
+                        android:background="@color/viewlinelight"
+                        android:layout_below="@+id/info1"></View>
+                    <RelativeLayout
+                        android:id="@+id/info2"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/info1"
+                        android:layout_height="50dp"
+                        android:background="@color/blueok"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="16dp"
+
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Subtotal"
+                            android:id="@+id/textView14"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Amount"
+                            android:id="@+id/textView15"
+                            android:layout_alignTop="@+id/textView14"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/viewline4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lightline"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/viewlinelight"
+                        android:layout_above="@+id/info2"></View>
+                    <View
+                        android:id="@+id/viewline3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lightline"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/viewlinelight"
+                        android:layout_below="@+id/info2"></View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/info3"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/viewline3"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+
+                        android:paddingTop="16dp"
+                        android:paddingLeft="16dp"
+
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Total Amount Paid"
+                            android:textStyle="italic|bold"
+                            android:textSize="15dp"
+                            android:id="@+id/textView16"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Amount"
+                            android:id="@+id/textView17"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true" />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/viewline5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lightline"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/viewlinelight"
+                        android:layout_above="@+id/info3"></View>
+                    <View
+                        android:id="@+id/viewline6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lightline"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/viewlinelight"
+                        android:layout_below="@+id/info3"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="www.healthygo.in"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#808080"
+                        android:id="@+id/textView18"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

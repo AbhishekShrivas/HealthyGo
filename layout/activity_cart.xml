@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="healthygo2.vijayanitech.com.healthygo.CartActivity">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:id="@+id/tvtital"
+            android:textSize="25dp"
+            android:text="Cart"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:id="@+id/cartview">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@android:id/list"
+            android:background="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewlinelight"
+
+        android:layout_below="@+id/cartview"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c9c9c9"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/viewline">
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_column="0"
+                    android:text="Subtotal"
+                    android:textColor="#000"
+
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/sub"
+                    android:layout_column="1"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </TextView>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_column="0"
+                    android:text="Total"
+                    android:textColor="#10b92c"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tot"
+                    android:layout_column="1"
+                    android:textColor="#10b92c"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </TextView>
+
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/Proceed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Proceed To CheckOut"
+            android:typeface="serif"
+            android:textColor="#FFF"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

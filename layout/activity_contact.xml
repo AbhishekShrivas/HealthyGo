@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:id="@+id/tvtital"
+            android:layout_toRightOf="@+id/ivback"
+            android:layout_toLeftOf="@+id/ivdone"
+            android:text="Contact Us"
+            />
+        <ImageView
+            android:id="@+id/ivdone"
+            style="@style/backIcon"
+            android:src="@drawable/done_icon"
+            android:padding="5dp"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray"
+            android:padding="2dp"
+            android:gravity="center_horizontal">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+
+
+                <ImageView
+                    android:layout_width="168dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/contactus"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imagecontact"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We welcome any feedback, questions or comments"
+                    android:layout_below="@+id/imagecontact"
+                    android:textColor="#4f4746"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:hint="Name"
+                    android:textColor="#000000"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="170dp" />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:id="@+id/editText2"
+                    android:layout_below="@+id/editText"
+                    android:layout_alignStart="@+id/discprice"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000" />
+
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3"
+                    android:hint="Message"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/editText2"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/button"
+                    android:layout_below="@+id/editText3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="57dp"
+                    android:background="@color/colorPrimary" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

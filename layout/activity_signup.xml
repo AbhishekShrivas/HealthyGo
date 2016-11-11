@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/stethoscopeeeeeeeeeee"
+
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_headerback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbarheight"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/ivback"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="5dp"
+                android:padding="15dp"/>
+
+            <TextView
+                style="@style/HeadertitalCentertext"
+                android:text="@string/SIGNUP"
+                android:id="@+id/tvtital"
+                />
+
+
+        </RelativeLayout>
+
+
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:fillViewport="true">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparantblackdark"
+                        android:paddingLeft="15dp">
+                        <ImageView
+                            android:id="@+id/iv1"
+                            style="@style/img_account"
+                            android:src="@drawable/usernew"
+                            />
+                        <EditText
+                            android:id="@+id/etname"
+                            style="@style/commonedittextstyle"
+                            android:hint="@string/firstname"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences"
+                            android:layout_toRightOf="@+id/iv1"
+                            />
+                    </RelativeLayout>
+
+                    <!--                <RelativeLayout
+                                        style="@style/relativesimple"
+                                        android:visibility="gone">
+                                        <ImageView
+                                            android:id="@+id/iv2"
+                                            style="@style/img_account"
+                                            android:src="@drawable/mobilenew"
+                                            />
+                                        <EditText
+                                            android:id="@+id/etmobile"
+                                            style="@style/commonedittextstyle"
+                                            android:hint="@string/mobilenumber"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="phone"
+                                            android:layout_toRightOf="@+id/iv2"
+                                            />
+                                    </RelativeLayout>
+                    -->
+                    <RelativeLayout
+                        style="@style/relativesimple">
+                        <ImageView
+                            android:id="@+id/iv3"
+                            style="@style/img_account"
+                            android:src="@drawable/emailnew"
+                            />
+                        <EditText
+                            android:id="@+id/etemail"
+                            style="@style/commonedittextstyle"
+                            android:hint="@string/email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:layout_toRightOf="@+id/iv3"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/relativesimple"
+                        android:layout_marginBottom="20dp">
+                        <ImageView
+                            android:id="@+id/iv4"
+                            style="@style/img_account"
+                            android:src="@drawable/passwordnew"
+                            />
+                        <EditText
+                            android:id="@+id/etpwd"
+                            style="@style/commonedittextstyle"
+                            android:hint="@string/password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:layout_toRightOf="@+id/iv4"
+                            />
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btncontinue"
+                        style="@style/sqare_button_medium"
+                        android:layout_margin="1dp"
+                        android:enabled="true"
+                        android:text="@string/CONTINUE"
+                        android:visibility="gone"/>
+
+
+
+
+                    <Button
+                        android:id="@+id/btnsignin"
+                        style="@style/sqare_button_medium"
+                        android:layout_margin="1dp"
+                        android:enabled="true"
+                        android:text="CONTINUE" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:textStyle="normal"
+                        android:padding="2dp"
+                        android:textColor="@color/white"
+                        android:text="@string/or"
+                        android:textAppearance="?android:attr/textAppearance" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/sign_in_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ivfacebook"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/facebook"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ivgoogle"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/googleplus"/>
+                    </LinearLayout>-->
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- <TextView
+             android:id="@+id/textView2"
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:layout_alignParentBottom="true"
+             android:background="@color/transparantblackdark"
+             android:gravity="bottom|center"
+             android:text="@string/terms"
+             android:textSize="12dp"
+             android:textColor="@color/white"
+             android:textStyle="normal"
+             android:padding="2dp" />
+     -->
+
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

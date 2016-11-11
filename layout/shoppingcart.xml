@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical" android:layout_height="fill_parent"
+ android:layout_width="fill_parent" android:background="#ffffff">
+ <ListView android:layout_height="wrap_content"
+  android:layout_weight="1" android:id="@+id/ListViewCatalog"
+  android:layout_width="fill_parent" android:background="#ffffff"
+  android:cacheColorHint="#ffffff" android:clickable="true"
+  android:choiceMode="multipleChoice">
+ 
+ </ListView>
+
+ <LinearLayout
+     android:id="@+id/LinearLayout01"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="5dip"
+     
+     android:orientation="horizontal" >
+
+     <Button
+         android:id="@+id/ButtonRemoveFromCart"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:background="#FFD600"
+         android:text="Remove" />
+
+     <Button
+         android:id="@+id/Button02"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="fill_vertical"
+         android:layout_weight="1"
+         android:background="#F44336"
+         android:text="Proceed" >
+     </Button>
+ </LinearLayout>
+ 
+</LinearLayout>

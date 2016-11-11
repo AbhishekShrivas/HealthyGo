@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/stethoscopeeeeeeeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/rl_headerback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivback"
+            style="@style/imgback"/>
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:text="HealthyGO"
+            android:id="@+id/tvtital"
+
+            />
+
+      <!--  <ImageView
+            android:id="@+id/ivdone"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/done_icon"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:visibility="gone"/>
+-->
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                >
+
+                <RelativeLayout
+                    style="@style/relativesimple">
+                    <ImageView
+                        android:id="@+id/iv3"
+                        style="@style/img_account"
+                        android:src="@drawable/emailnew"
+                        />
+                    <EditText
+                        android:id="@+id/etemail"
+                        style="@style/commonedittextstyle"
+                        android:hint="@string/email"
+
+                        android:inputType="textEmailAddress"
+                        android:layout_toRightOf="@+id/iv3"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/relativesimple"
+                    android:layout_marginBottom="20dp">
+                    <ImageView
+                        android:id="@+id/iv4"
+                        style="@style/img_account"
+                        android:src="@drawable/passwordnew"
+                        android:layout_centerVertical="true"/>
+                    <EditText
+                        android:id="@+id/etpwd"
+                        style="@style/commonedittextstyle"
+                        android:hint="@string/password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:layout_toRightOf="@+id/iv4"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/btnsignin"
+                    style="@style/sqare_button_medium"
+                    android:layout_margin="1dp"
+                    android:enabled="true"
+                    android:text="CONTINUE" />
+
+
+                <TextView
+                    android:id="@+id/tvforgotped"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:padding="2dp"
+                    android:textColor="#ffffff"
+                    android:text="@string/forgetpwd"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <TextView
+                    android:id="@+id/tvlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:padding="2dp"
+                    android:textColor="#ffffff"
+                    android:text="@string/orlogin"
+                    android:textAppearance="?android:attr/textAppearance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                </LinearLayout>
+
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/fragment"
+                    android:name="healthygo2.vijayanitech.com.healthygo.FbloginFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:layout="@layout/fragment_fblogin" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

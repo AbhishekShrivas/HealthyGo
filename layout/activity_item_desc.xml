@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_headerback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/ivback"
+            style="@style/backIcon" />
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:text="HealthyGO"
+            android:id="@+id/tvtital"
+
+            />
+        <ImageView
+            android:id="@+id/cart"
+            style="@style/backIcon"
+            android:src="@drawable/cartempty"
+            android:padding="5dp"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/LinearLayoutHeader"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rl_headerback"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/testimage"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentStart="true"
+            >
+        </ImageView>
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lightline"
+            android:background="@color/topbar_gray"
+            android:layout_below="@+id/testimage"></View>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewline1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lightline"
+        android:background="@color/topbar_gray"
+        android:layout_below="@+id/llmain"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LinearLayoutHeader"
+        android:padding="@dimen/itempadding">
+
+        <LinearLayout
+            style="@style/homeitemlinear_l"
+            android:layout_toRightOf="@+id/ivDiscover"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/testname"
+            android:textColor="#000000"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/location"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#c14334"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/ivrating"
+            style="@style/secondcategoryimgright"
+            android:src="@drawable/logo"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llmain"
+
+        android:weightSum="1"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout2"
+        android:layout_above="@+id/ButtonAddToCart">
+
+
+        <TextView
+            android:id="@+id/price1"
+            style="@style/listitemsubtital"
+            android:layout_alignLeft="@+id/tvticketamt"
+            android:layout_below="@+id/tvticketamt"
+            android:text="Actual Price"
+            android:paddingLeft="@dimen/homeitemrowpaddingleft"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/discprice1"
+            style="@style/listitemsubtital"
+            android:text="Discounted Price"
+            android:paddingLeft="@dimen/homeitemrowpaddingleft"
+            android:textColor="#fb590e"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/price"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/discprice"
+            android:layout_alignTop="@+id/discprice1"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/ButtonAddToCart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Add to Cart"
+        android:typeface="serif"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="healthygo2.vijayanitech.com.healthygo.Offers"
+    android:contextClickable="false"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:background="@color/colorPrimary"
+
+        android:visibility="visible"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:id="@+id/tvtital"
+            android:textSize="20dp"
+            android:text="Offers and Discount"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView10"
+        android:src="@drawable/nooffers"
+        android:layout_below="@+id/rl_header"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Oopsss!"
+        android:id="@+id/textView19"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Currently no offers Found"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Stay tuned for further Updates"
+        android:id="@+id/textView21"
+        android:textStyle="italic"
+        android:textColor="#717171"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Healthy Go an initiative by Corp Health Plus Pvt. Ltd. We provide you with the latest fresh deals and coupons straight from the health industry."
+        android:id="@+id/textView22"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/rl_header"
+        android:layout_marginBottom="10dp"
+        android:textColor="#585858" />
+
+</RelativeLayout>

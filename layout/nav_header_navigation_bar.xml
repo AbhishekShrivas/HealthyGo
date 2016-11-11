@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlprofileBox"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_semi_transparent"
+    >
+    <ImageView
+        android:id="@+id/ivblurimg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/newhealth"
+        android:layout_alignParentTop="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_profilepicc"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/imgttt"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="10dp"
+        app:civ_border_color="#Ffffff"
+        android:layout_alignBottom="@+id/ivblurimg"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_profilepicc"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@+id/iv_profilepicc"
+        android:layout_alignBottom="@+id/ivblurimg">
+
+        <TextView
+            android:id="@+id/guestt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guest"
+            android:textColor="#cdcdcd"
+            android:textStyle="normal"
+            android:textSize="@dimen/largetextsize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="(Edit Profile)"
+            android:id="@+id/textView5"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

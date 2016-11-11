@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_headerback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivback"
+            style="@style/backIcon"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            style="@style/actionmiddletext"
+            android:id="@+id/tvtital"
+            android:layout_toRightOf="@+id/ivback"
+
+            android:text="@string/forgetpwdtital"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Please Enter Your Email Account"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rlemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/buttonrecover"
+            style="@style/sqare_button_small"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:text="RECOVER" />
+    </LinearLayout>
+
+</LinearLayout>
+    

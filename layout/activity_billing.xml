@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparantblack"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_headerback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivback"
+            style="@style/backIcon"
+            android:layout_centerVertical="true"/>
+
+
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:id="@+id/tvtital"
+            android:layout_toRightOf="@+id/ivback"
+            android:layout_toLeftOf="@+id/ivdone"
+            android:text="HEALTHYGO"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/transparantblack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivimage"
+                        android:layout_width="@dimen/usericon_height"
+                        android:layout_height="@dimen/usericon_height"
+                        android:src="@drawable/male_circle_icon"
+                        android:layout_marginRight="5dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Name"
+                        android:id="@+id/billname"
+                        android:textSize="@dimen/mediumtextsize"
+                        android:singleLine="false"
+                        android:minLines="4"
+                        android:gravity="top"
+                        android:padding="5dp"
+                        android:maxLength="30"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edittext_round_backgrey"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                style="@style/PITcustomdpView"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <!--Email-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/email"
+                        android:layout_width="@dimen/usericon_height"
+                        android:layout_height="@dimen/usericon_height"
+                        android:src="@drawable/billemail"
+                        android:layout_marginRight="5dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+
+                        android:hint="Email"
+                        android:layout_height="40dp"
+                        android:id="@+id/billemail"
+                        android:textSize="@dimen/mediumtextsize"
+                        android:singleLine="false"
+                        android:minLines="4"
+                        android:gravity="top"
+                        android:padding="5dp"
+                        android:maxLength="70"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edittext_round_backgrey"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                style="@style/PITcustomdpView"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="@dimen/usericon_height"
+                    android:layout_height="@dimen/usericon_height"
+                    android:src="@drawable/phone"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Phone"
+                    android:id="@+id/billphone"
+                    android:textSize="@dimen/mediumtextsize"
+                    android:singleLine="false"
+                    android:minLines="4"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:maxLength="30"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext_round_backgrey"/>
+            </LinearLayout>
+
+            <View
+                style="@style/PITcustomdpView"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="@dimen/usericon_height"
+                    android:layout_height="@dimen/usericon_height"
+                    android:src="@drawable/bill"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="2"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price"
+                        android:textSize="@dimen/mediumtextsize"
+                        android:singleLine="false"
+                        android:minLines="2"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:maxLength="100"
+                        android:textColor="@color/black"
+
+                        android:id="@+id/totaluserprice" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finalpay"
+        style="@style/sqare_button_medium"
+        android:layout_margin="1dp"
+        android:enabled="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/checkinnow" />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarheight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivback"
+            style="@style/backIcon" />
+
+        <TextView
+            style="@style/HeadertitalCentertext"
+            android:id="@+id/tvtital"
+            android:layout_toRightOf="@+id/ivback"
+            android:layout_toLeftOf="@+id/ivdone"
+            android:text="Customer Support"
+             />
+        <ImageView
+            android:id="@+id/ivdone"
+            style="@style/backIcon"
+            android:src="@drawable/done_icon"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/tvstorename"
+                style="@style/listitemtital"
+                android:textStyle="normal"
+                android:text="@string/generalfeedback"
+                android:textSize="@dimen/headercentertextsize"/>
+            
+            <EditText
+                android:id="@+id/etfeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="7"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:hint="@string/wewouldlove"
+                android:gravity="top"
+                android:textSize="@dimen/normaltextsize"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_round_backwhite"/>
+            <TextView
+                android:id="@+id/tvbottomtext"
+                style="@style/listitemtital"
+                android:text="@string/ifyouhavesomething"
+                android:layout_margin="15dp"
+                android:textStyle="normal"
+                android:textSize="@dimen/smalltextsize"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
